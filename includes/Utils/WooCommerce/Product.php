@@ -43,7 +43,7 @@ class Product
         $quantity = $args['quantity'];
 
         $product = wc_get_product($product_id);
-        if(!$product) {
+        if (!$product) {
             return 0;
         }
 
@@ -59,10 +59,10 @@ class Product
      */
     public static function get_product_sale_price($product, $args)
     {
-        if($product) {
-            if(!empty($args['discount_value']) && !empty($args['discount_type'])) {
+        if ($product) {
+            if (!empty($args['discount_value']) && !empty($args['discount_type'])) {
                 $product_price = $product->get_price();
-                if($args['discount_type'] == "discount_percent") {
+                if ($args['discount_type'] == "discount_percent") {
                     $percent = $args['discount_value'] / 100;
                     return $product_price - $product_price * $percent;
                 } elseif ($args['discount_type'] == "discount_price") {
@@ -84,9 +84,9 @@ class Product
         $productPrice = "";
 
         // take min price for variable product
-        if($product->get_type() == "variable") {
+        if ($product->get_type() == "variable") {
             $prices = $product->get_variation_prices(true);
-            if(!empty($prices['price'])) {
+            if (!empty($prices['price'])) {
                 $productPrice = current($prices['price']);
             }
         }
@@ -94,7 +94,7 @@ class Product
         return wc_get_price_to_display(
             $product,
             array(
-                'qty' => $qty,
+                'qty' => 1,
                 'price'=>$productPrice
             )
         );

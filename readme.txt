@@ -3,7 +3,7 @@ Tags: Server-Side Tracking,WooCommerce,Zaraz,Cloudflare,GDPR,cookie consent,cook
 Requires at least: 5.8
 Tested up to: 6.6
 Requires PHP: 7.2
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -138,6 +138,10 @@ With the additional data captured by server-side tracking, you’ll see signific
 We provide comprehensive documentation and email support to help you every step of the way. Whether you’re setting up the plugin or need assistance with Cloudflare, our team is here to ensure your transition to server-side tracking is smooth and successful.
 
 == Changelog ==
+
+= 1.6.4 - 2024-10-30  =
+* Bug: Cloudflare have remove some "mode" in the config, so asked us to remove it (please update your config)
+* Bug: Product price was wrong since it show the price of all the products and not just a single product in the products array
 
 = 1.6.3 - 2024-10-14  =
 * Bug: Error on the woocommerce archive page

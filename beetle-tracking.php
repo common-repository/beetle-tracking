@@ -3,7 +3,7 @@
  * Plugin Name: Beetle Tracking - Cloudflare Zaraz for WooCommerce
  * Plugin URI: https://rocketbeetle.com/beetle-tracking
  * Description: Implement Cloudflare Zaraz tracking on your site. Tracking key events with our automated tracking, and add you own custom tracking. WooCommerce is fully supported.
- * Version: 1.6.3
+ * Version: 1.6.4
  * Requires PHP: 7.4
  * Author: RocketBeetle
  * Author URI: https://rocketbeetle.com
